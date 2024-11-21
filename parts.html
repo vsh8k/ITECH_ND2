@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parts</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .brand-logo {
+        max-height: 5vh;
+        margin-bottom: 4vh;
+      }
+
+      .listingimg {
+        height: 20vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .listing {
+        margin-bottom: 20px;
+      }
+
+      .bs-txt {
+        margin-bottom: 20px;
+      }
+
+      .opc-txt {
+        padding-bottom: 40px;
+      }
+
+      .product-txt {
+        font-weight: bold;
+        text-align: center;
+        padding-right: 7%;
+        padding-left: 7%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="bike-wheel"></div>
+      <div class="loader-text">BikeExpress</div>
+    </div>
+    <div class="content">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand">
+            <img
+              id="navlogo"
+              src="./assets/logo.png"
+              alt="BikeExpress logo"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div id="navbuttons" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a href="./index.html" class="nav-link">Bikes</a>
+              <a href="./parts.html" class="nav-link">Parts</a>
+              <a href="./services.html" class="nav-link">Services</a>
+              <a href="./contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="container my-5">
+        <h1 class="text-center mb-4 opc-txt">Our Parts Catalog</h1>
+        <!-- Shimano Section -->
+        <div class="brand-section mb-5">
+          <div class="text-center mb-4">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/shimano-1-.svg"
+              alt="Shimano"
+              class="brand-logo"
+            />
+            <div class="category-links text-center mb-4">
+              <a href="#" class="btn btn-outline-primary m-2">Groupsets</a>
+              <a href="#" class="btn btn-outline-primary m-2">Chains</a>
+              <a href="#" class="btn btn-outline-primary m-2">Brake Systems</a>
+              <a href="#" class="btn btn-outline-primary m-2">Deraileurs</a>
+              <a href="#" class="btn btn-outline-primary m-2">Wheels</a>
+              <a href="#" class="btn btn-outline-primary m-2">Pedals</a>
+            </div>
+          </div>
+          <h3 class="text-center bs-txt">Best Sellers</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Shimano Ultegra R8000 Groupset</p>
+                <img
+                  src="https://cdn.road.cc/sites/default/files/styles/schema_org/public/shimano-ultegra-r8000-mechanical-and-rim-brake-1.jpg"
+                  alt="Shimano Ultegra R8000 Groupset"
+                  class="listingimg"
+                />
+                <div class="listingprice">$800</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal1"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal1" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">
+                        Shimano Ultegra R8000 Groupset
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Shimano Ultegra R8000 is a performance-oriented
+                        groupset designed for both amateurs and professionals.
+                        Known for its precise shifting, lightweight
+                        construction, and advanced braking system, it enhances
+                        your ride experience on any terrain.
+                      </p>
+                      <ul>
+                        <li>11-speed drivetrain</li>
+                        <li>Lightweight Hollowtech II crankset</li>
+                        <li>Enhanced braking power with dual-pivot brakes</li>
+                        <li>Ideal for road cycling enthusiasts</li>
+                      </ul>
+                      <p><strong>Price:</strong> $800</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Shimano 105 5800 Chain</p>
+                <img
+                  src="https://www.biketart.com/cdn/shop/products/cnhg600116_1.jpg?v=1680704848"
+                  alt="Shimano 105 5800 Chain"
+                  class="listingimg"
+                />
+                <div class="listingprice">$35</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal2"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal2" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Shimano 105 5800 Chain</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Shimano 105 5800 chain is durable and reliable,
+                        ideal for 11-speed systems. It delivers smooth and
+                        efficient power transfer for riders looking for
+                        long-lasting performance.
+                      </p>
+                      <ul>
+                        <li>Compatible with 11-speed drivetrains</li>
+                        <li>Corrosion-resistant SIL-TEC coating</li>
+                        <li>Optimized for quiet and smooth operation</li>
+                        <li>Suitable for road and hybrid bikes</li>
+                      </ul>
+                      <p><strong>Price:</strong> $35</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Shimano Deore M6000 Disc Brake System</p>
+                <img
+                  src="https://www.bicycledoctor.co.uk/images/products/archive/m/m6/m6000blrright.jpg?width=1998&height=1998&quality=85&mode=pad&format=webp&bgcolor=ffffff"
+                  alt="Shimano Deore M6000 Disc Brake System"
+                  class="listingimg"
+                />
+                <div class="listingprice">$250</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal3"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal3" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">
+                        Shimano Deore M6000 Disc Brake System
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Shimano Deore M6000 disc brake system offers
+                        reliable stopping power for trail riders and mountain
+                        bikers. Its ergonomic design ensures comfort and control
+                        on rough terrains.
+                      </p>
+                      <ul>
+                        <li>Hydraulic disc brake system</li>
+                        <li>Adjustable reach lever</li>
+                        <li>Consistent braking in all weather conditions</li>
+                        <li>Designed for cross-country and trail bikes</li>
+                      </ul>
+                      <p><strong>Price:</strong> $250</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SRAM Section -->
+        <div class="brand-section mb-5">
+          <div class="text-center mb-4">
+            <img
+              src="https://logos-download.com/wp-content/uploads/2020/06/SRAM_Logo.png"
+              alt="SRAM"
+              class="brand-logo"
+            />
+            <div class="category-links text-center mb-4">
+              <a href="#" class="btn btn-outline-danger m-2">Groupsets</a>
+              <a href="#" class="btn btn-outline-danger m-2">Chains</a>
+              <a href="#" class="btn btn-outline-danger m-2">Brake Systems</a>
+              <a href="#" class="btn btn-outline-danger m-2">Deraileurs</a>
+              <a href="#" class="btn btn-outline-danger m-2">Sprockets</a>
+              <a href="#" class="btn btn-outline-danger m-2">Maintenance</a>
+            </div>
+          </div>
+          <h3 class="text-center bs-txt">Best Sellers</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="listing">
+                <p>SRAM Force 22 Groupset</p>
+                <img
+                  src="https://cdn11.bigcommerce.com/s-kvyj4/images/stencil/1280x1280/products/1685/12287/Force22-Group__38274.1574790160.jpg?c=2"
+                  alt="SRAM Force 22 Groupset"
+                  class="listingimg"
+                />
+                <div class="listingprice">$1200</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal4"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal4" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">SRAM Force 22 Groupset</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The SRAM Force 22 Groupset combines high-end performance
+                        with lightweight materials. This 22-speed drivetrain
+                        provides precise and seamless shifting for road
+                        cyclists, whether training or racing.
+                      </p>
+                      <ul>
+                        <li>22-speed drivetrain for versatile gearing</li>
+                        <li>Carbon fiber crankset for reduced weight</li>
+                        <li>
+                          DoubleTap shifter technology for intuitive gear
+                          changes
+                        </li>
+                        <li>
+                          Hydraulic disc braking for ultimate stopping power
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $1200</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>SRAM PC-1130 11-Speed Chain</p>
+                <img
+                  src="https://www.bike-discount.de/media/image/94/76/ab/pc1130.jpg"
+                  alt="SRAM PC-1130 11-Speed Chain"
+                  class="listingimg"
+                />
+                <div class="listingprice">$45</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal5"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal5" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">SRAM PC-1130 11-Speed Chain</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The SRAM PC-1130 11-Speed Chain is designed to provide
+                        smooth and reliable shifting performance for 11-speed
+                        drivetrains. It’s built to last with durable,
+                        high-quality materials, ensuring long-lasting
+                        performance in any conditions.
+                      </p>
+                      <ul>
+                        <li>Durable construction for extended lifespan</li>
+                        <li>Optimized for 11-speed drivetrains</li>
+                        <li>Lightweight and efficient shifting</li>
+                        <li>
+                          Compatible with SRAM, Shimano, and Campagnolo
+                          drivetrains
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $40</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>SRAM Guide R Disc Brakes</p>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaHG2p7WybQAZk7JD_ZP_FsWvTPX__e52iXA&s"
+                  alt="SRAM Guide R Disc Brakes"
+                  class="listingimg"
+                />
+                <div class="listingprice">$350</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal6"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal6" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">SRAM Guide R Disc Brakes</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The SRAM Guide R Disc Brakes offer excellent stopping
+                        power and modulation for all-mountain riders. These
+                        brakes provide consistent performance in a variety of
+                        weather conditions and ensure reliability on the
+                        toughest trails.
+                      </p>
+                      <ul>
+                        <li>4-piston caliper design for powerful braking</li>
+                        <li>Adjustable lever reach for personalized fit</li>
+                        <li>Heat shield for temperature management</li>
+                        <li>Compatible with DOT fluid for easy maintenance</li>
+                      </ul>
+                      <p><strong>Price:</strong> $350</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Magura Section -->
+        <div class="brand-section mb-5">
+          <div class="text-center mb-4">
+            <img
+              src="./Assets/magura-logo.png"
+              alt="Magura"
+              class="brand-logo"
+            />
+            <div class="category-links text-center mb-4">
+              <a href="#" class="btn btn-outline-warning m-2">Calipers</a>
+              <a href="#" class="btn btn-outline-warning m-2">Brake Discs</a>
+              <a href="#" class="btn btn-outline-warning m-2">Calipers</a>
+              <a href="#" class="btn btn-outline-warning m-2">Hoses</a>
+              <a href="#" class="btn btn-outline-warning m-2">Brake Pads</a>
+              <a href="#" class="btn btn-outline-warning m-2"
+                >Dropper Seat Posts</a
+              >
+            </div>
+          </div>
+          <h3 class="text-center bs-txt">Best Sellers</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Magura MT5 FM Disc Brakes</p>
+                <img
+                  src="https://www.motusaeternus.lt/image/cache/data/preks/magura/1200Wx1200H-2702863-625x625_0.png"
+                  alt="Magura MT5 FM Disc Brakes"
+                  class="listingimg"
+                />
+                <div class="listingprice">$300</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal7"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal7" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Magura MT5 FM Disc Brakes</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Magura MT5 FM Disc Brakes are designed for downhill
+                        and enduro riders who need high performance and strong,
+                        consistent braking. These brakes feature a 4-piston
+                        caliper for powerful stopping power and great
+                        modulation, making them ideal for aggressive riding.
+                      </p>
+                      <ul>
+                        <li>4-piston caliper for strong, reliable braking</li>
+                        <li>Optimized for downhill and enduro riding</li>
+                        <li>Ergonomic lever with adjustable reach</li>
+                        <li>
+                          Magura's royal blood brake fluid for smooth operation
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $250</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Magura MDR-C 203mm Brake Disc</p>
+                <img
+                  src="https://www.motusaeternus.lt/image/cache/data/preks/magura/2701919-1200Wx1200H-625x625_0.jpg"
+                  alt="Magura MDR-C 203mm Brake Disc"
+                  class="listingimg"
+                />
+                <div class="listingprice">$60</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal8"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal8" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Magura MDR-C 203mm Brake Disc</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Magura MDR-C 203mm Brake Disc provides excellent
+                        braking performance in all conditions. Featuring a
+                        robust design and optimized heat dissipation, this rotor
+                        offers great reliability and performance during
+                        aggressive riding or long descents.
+                      </p>
+                      <ul>
+                        <li>203mm rotor size for superior stopping power</li>
+                        <li>Optimized cooling fins to manage heat buildup</li>
+                        <li>Compatible with Magura MT series brakes</li>
+                        <li>
+                          Durable, lightweight construction for maximum
+                          performance
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $75</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Magura MT Power Brake Pads</p>
+                <img
+                  src="https://www.maciag-offroad.de/shop/artikelbilder/normal/132067/trickstuff-mtb-scheibenbremsbelag-mtb-disc-brake-pad-170-power-1.jpg"
+                  alt="Magura MT Power Brake Pads"
+                  class="listingimg"
+                />
+                <div class="listingprice">$25</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal9"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal9" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Magura MT Power Brake Pads</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Magura MT Power Brake Pads provide superior braking
+                        performance and durability, even in harsh conditions.
+                        These pads are designed to work with Magura MT disc
+                        brakes, offering consistent braking power and longevity.
+                      </p>
+                      <ul>
+                        <li>
+                          High-performance brake pads for Magura MT series
+                          brakes
+                        </li>
+                        <li>Designed for aggressive riding and downhill use</li>
+                        <li>Long-lasting material for extended use</li>
+                        <li>
+                          Optimized for excellent braking power and modulation
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $30</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Park Tool Section -->
+        <div class="brand-section mb-5">
+          <div class="text-center mb-4">
+            <img
+              src="./Assets/parktool-logo.png"
+              alt="Park Tool"
+              class="brand-logo"
+            />
+            <div class="category-links text-center mb-4">
+              <a href="#" class="btn btn-outline-primary m-2"
+                >Bike Repair Kits</a
+              >
+              <a href="#" class="btn btn-outline-primary m-2">Cable Cutters</a>
+              <a href="#" class="btn btn-outline-primary m-2">Wrenches</a>
+              <a href="#" class="btn btn-outline-primary m-2">Pumps</a>
+              <a href="#" class="btn btn-outline-primary m-2">Chain Breakers</a>
+            </div>
+          </div>
+          <h3 class="text-center bs-txt">Best Sellers</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Park Tool BK-1 Bike Repair Kit</p>
+                <img
+                  src="https://cdn11.bigcommerce.com/s-tpvx4esvgk/images/stencil/500x500/products/145801/378356/park-tool-bkd-1-hydraulic-bleed-kit-dot-2821029999222__21488.1697236146.jpg?c=1"
+                  alt="Park Tool BK-1 Bike Repair Kit"
+                  class="listingimg"
+                />
+                <div class="listingprice">$150</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal11"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal10" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">
+                        Park Tool BK-1 Bike Repair Kit
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Park Tool BK-1 Bike Repair Kit is a complete set of
+                        tools to ensure your bike stays in top condition. With
+                        essential tools for adjusting gears, brakes, and
+                        performing minor repairs, this kit is a must-have for
+                        every cyclist.
+                      </p>
+                      <ul>
+                        <li>
+                          Includes tools for gear and brake adjustments,
+                          cleaning, and basic repairs
+                        </li>
+                        <li>
+                          Compact and portable for easy storage and travel
+                        </li>
+                        <li>
+                          Durable, high-quality tools designed for everyday use
+                        </li>
+                        <li>
+                          Comes with a convenient carrying case for organization
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $125</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Park Tool CN-10 Cable Cutter</p>
+                <img
+                  src="https://images.bike24.com/i/mb/c4/99/af/11617-00-d-18911.jpg"
+                  alt="Park Tool CN-10 Cable Cutter"
+                  class="listingimg"
+                />
+                <div class="listingprice">$40</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal11"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal11" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Park Tool CN-10 Cable Cutter</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Park Tool CN-10 Cable Cutter is a precision tool
+                        designed to cut all types of cables, including brake,
+                        shift, and derailleur cables. With a sharp, durable
+                        cutting edge, it ensures clean cuts and prevents
+                        fraying, ensuring smooth operation for your bike.
+                      </p>
+                      <ul>
+                        <li>Precision cutting tool for cables of all types</li>
+                        <li>Sharp, durable jaws for clean and precise cuts</li>
+                        <li>Ergonomic handles for comfort during use</li>
+                        <li>
+                          Great for DIY bike maintenance or professional use
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $50</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="listing">
+                <p>Park Tool Y-Wrench</p>
+                <img
+                  src="https://www.supercrossbmx.com/cdn/shop/products/parktool-aws-y-hex-wrench_1200x.jpg?v=1677809704"
+                  alt="Park Tool Y-Wrench"
+                  class="listingimg"
+                />
+                <div class="listingprice">$20</div>
+                <button
+                  type="button"
+                  class="btn vd-btn mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#partsModal12"
+                >
+                  View Details
+                </button>
+              </div>
+              <div id="partsModal12" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Park Tool Y-Wrench</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        The Park Tool Y-Wrench is a versatile, multi-use tool
+                        with three commonly used sizes of hex wrenches in a
+                        convenient Y-shape. Ideal for quick adjustments or
+                        assembling your bike, this tool ensures you always have
+                        the right size at hand.
+                      </p>
+                      <ul>
+                        <li>
+                          Multi-use Y-shaped tool with three different hex sizes
+                        </li>
+                        <li>
+                          Ergonomically designed for ease of use and comfort
+                        </li>
+                        <li>Made of durable steel for lasting reliability</li>
+                        <li>
+                          Perfect for general maintenance and bike assembly
+                        </li>
+                      </ul>
+                      <p><strong>Price:</strong> $25</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary cart-btn">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="partModal" style="display: none"></div>
+      <footer>
+        <label id="copytext">&copy; 2024 BikeExpress</label>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./parts.js"></script>
+  </body>
+</html>

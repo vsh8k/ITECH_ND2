@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BikeExpress</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="bike-wheel"></div>
+      <div class="loader-text">BikeExpress</div>
+    </div>
+    <div class="content">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand">
+            <img
+              id="navlogo"
+              src="./assets/logo.png"
+              alt="BikeExpress logo"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div id="navbuttons" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a href="./index.html" class="nav-link">Bikes</a>
+              <a href="./parts.html" class="nav-link">Parts</a>
+              <a href="./services.html" class="nav-link">Services</a>
+              <a href="./contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <form class="d-flex">
+				<input id="searchbox" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <section id="bigad">
+          <h1 id="adtxt">NEW COLORS !</h1>
+          <img id="adimg" title="Save up to 30%" src="./assets/ad.png" />
+        </section>
+      </div>
+      <section id="weather">
+        <h3>Today's Weather for Biking</h3>
+        <p id="weather-info">Loading weather data...</p>
+      </section>
+      <hr />
+      <div>
+        <section id="sometext">
+          <h3>Our New Collection</h3>
+        </section>
+      </div>
+      <section id="products">
+        <div class="listing">
+          <img
+            src="./assets/bike_1.png"
+            alt="Specialized Diverge Expert"
+            class="listingimg"
+          />
+          <label>Specialized Diverge Expert</label>
+          <label class="listingprice"> Price: 4,500&euro;</label>
+          <div class="listingbtns">
+            <a class="btn" href="./specialized-diverge-expert.html"
+              >Read more</a
+            >
+            <a class="btn cart-btn" href="">Add to cart</a>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="./assets/bike_2.png"
+            alt="Cannondale Synapse Carbon LE"
+            class="listingimg"
+          />
+          <label>Cannondale Synapse Carbon 2 LE</label>
+          <label class="listingprice"> Price: 4,699&euro;</label>
+          <div class="listingbtns">
+            <a class="btn" href="">Read more</a>
+            <a class="btn cart-btn" href="">Add to cart</a>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="./assets/bike_3.png"
+            alt="Trek Checkpoint SLR"
+            class="listingimg"
+          />
+          <label>Trek Checkpoint SLR 7</label>
+          <label class="listingprice"> Price: 12,230&euro;</label>
+          <div class="listingbtns">
+            <a class="btn" href="">Read more</a>
+            <a class="btn cart-btn" href="">Add to cart</a>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="./assets/bike_4.png"
+            alt="Giant Revolt Advanced Pro"
+            class="listingimg"
+          />
+          <label>Giant Revolt Advanced Pro</label>
+          <label class="listingprice"> Price: 5,359&euro;</label>
+          <div class="listingbtns">
+            <a class="btn" href="">Read more</a>
+            <a class="btn cart-btn" href="">Add to cart</a>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="./assets/bike_5.png"
+            alt="Salsa Warbird Carbon GRX"
+            class="listingimg"
+          />
+          <label>Salsa Warbird Carbon GRX</label>
+          <label class="listingprice"> Price: 3,399&euro;</label>
+          <div class="listingbtns">
+            <a class="btn" href="">Read more</a>
+            <a class="btn cart-btn" href="">Add to cart</a>
+          </div>
+        </div>
+        <div class="listing">
+          <img
+            src="./assets/bike_6.png"
+            alt="Surly Straggler Disc"
+            class="listingimg"
+          />
+          <label>Surly Straggler Disc</label>
+          <label class="listingprice"> Price: 1,690&euro;</label>
+          <div class="listingbtns">
+            <a class="btn" href="">Read more</a>
+            <a class="btn cart-btn" href="">Add to cart</a>
+          </div>
+        </div>
+      </section>
+      <section id="pages">
+        <nav aria-label="Page navigation example" class="">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
+      <footer>
+        <label id="copytext">&copy; 2024 BikeExpress</label>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./bikes.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="bike-wheel"></div>
+      <div class="loader-text">BikeExpress</div>
+    </div>
+    <div class="content">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand">
+            <img
+              id="navlogo"
+              src="./assets/logo.png"
+              alt="BikeExpress logo"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div id="navbuttons" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a href="./index.html" class="nav-link">Bikes</a>
+              <a href="./parts.html" class="nav-link">Parts</a>
+              <a href="./services.html" class="nav-link">Services</a>
+              <a href="./contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <form class="d-flex">
+              <input
+                id="searchbox"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Page Content -->
+      <section class="container my-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <!-- Contact Information Cards -->
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Our Address</h5>
+                <p class="card-text">123 Bike Lane, Cycle City, CC 45678</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Call Us</h5>
+                <p class="card-text">+123 456 7890</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Email Us</h5>
+                <a href="mailto:info@bikeexpress.com" class="card-text"
+                  >info@bikeexpress.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Toggle Button -->
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#contactForm"
+          aria-expanded="false"
+          aria-controls="contactForm"
+        >
+          Contact Form
+        </button>
+        <!-- Contact Form -->
+        <form class="mt-4 collapse" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+          <button id="submit-btn" class="btn">Submit</button>
+        </form>
+      </section>
+      <div
+        id="verify-modal"
+        class="modal fade"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Verify that you're not a robot</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                data-callback="captchaCompleted"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <label id="copytext">&copy; 2024 BikeExpress</label>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .carousel-img {
+        height: 500px;
+        object-fit: cover;
+        transition: transform 1s ease;
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .carousel-caption h5 {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .carousel-caption p {
+        color: #e0e0e0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="bike-wheel"></div>
+      <div class="loader-text">BikeExpress</div>
+    </div>
+    <div class="content">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand">
+            <img
+              id="navlogo"
+              src="./assets/logo.png"
+              alt="BikeExpress logo"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div id="navbuttons" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <a href="./index.html" class="nav-link">Bikes</a>
+              <a href="./parts.html" class="nav-link">Parts</a>
+              <a href="./services.html" class="nav-link">Services</a>
+              <a href="./contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <form class="d-flex">
+              <input
+                id="searchbox"
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="container my-5 boof">
+        <h1 class="text-center mb-4">Our Services</h1>
+        <div
+          id="servicesCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.stasdock.com/cdn/shop/articles/Banner-bike-parts-maintenance-best-cycle-parts_1024x.jpg?v=1663857058"
+                class="d-block w-100 carousel-img"
+                alt="Bike Maintenance"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Bike Maintenance</h5>
+                <p>
+                  Keep your bike in top condition with our professional
+                  maintenance service.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0301/7080/8379/files/Dynamic_Bike_Fitting_at_Velo_Culture.jpg?v=1580205573"
+                class="d-block w-100 carousel-img"
+                alt="Custom Bike Fitting"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Custom Bike Fitting</h5>
+                <p>
+                  Get the perfect fit with our custom bike fitting services for
+                  comfort and performance.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://st.depositphotos.com/1898667/1760/i/450/depositphotos_17602851-stock-photo-bicycle-gears-and-rear-derailleur.jpg"
+                class="d-block w-100 carousel-img"
+                alt="Parts Replacement"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Parts Replacement</h5>
+                <p>
+                  We offer a wide range of parts replacement services to keep
+                  you riding smoothly.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://api.magura.com/medias/sys_master/root/h25/h5c/9497699090462/customize_your_brake_pad_cover_001/customize-your-brake-pad-cover-001.png"
+                class="d-block w-100 carousel-img"
+                alt="Bike Customization"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Bike Customization</h5>
+                <p>
+                  Personalize your bike with our customization services for a
+                  unique ride.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#servicesCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#servicesCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <footer>
+        <label id="copytext">&copy; 2024 BikeExpress</label>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
