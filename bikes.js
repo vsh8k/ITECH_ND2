@@ -1,41 +1,14 @@
 async function fetchWeather() {
   try {
-    // Fetch location data
-    const response = await fetch("http://ip-api.com/json");
-    const data = await response.json();
-    const { lat: latitude, lon: longitude, city } = data; // Destructure latitude, longitude, and city
-    console.log(`Latitude: ${latitude}, Longitude: ${longitude}, City: ${city}`);
-
-    const API_URL = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
-
-    // Fetch weather data
-    const weatherResponse = await fetch(API_URL);
-    if (!weatherResponse.ok) throw new Error(`HTTP error! Status: ${weatherResponse.status}`);
-    const weatherData = await weatherResponse.json();
-
-    const { temperature, weathercode } = weatherData.current_weather;
-    const bikingAdvice = getBikingAdvice(weathercode);
-
-    document.getElementById("weather-info").innerHTML = `
-      <strong>Your Location</strong>: ${city}<br>
-      <strong>Temperature</strong>: ${temperature}°C<br>
-      <strong><em>Biking advice:</em></strong> ${bikingAdvice}
-    `;
-  } catch (error) {
-    document.getElementById("weather-info").textContent = "Failed to load weather data.";
-    console.error("Error fetching weather data:", error);
-  }
-}
-
-async function fetchWeather() {
-  try {
-    const response = await fetch("http://ip-api.com/json");
-    const { lat: latitude, lon: longitude, city } = await response.json();
+    const geoResponse = await fetch("https://ipwhois.app/json/");
+    if (!geoResponse.ok) throw new Error(`IP fetch failed! Status: ${geoResponse.status}`);
+    const { latitude, longitude, city } = await geoResponse.json();
 
     const API_URL = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
     const weatherResponse = await fetch(API_URL);
-    if (!weatherResponse.ok) throw new Error(`HTTP error! Status: ${weatherResponse.status}`);
+    if (!weatherResponse.ok) throw new Error(`Weather fetch failed! Status: ${weatherResponse.status}`);
     const { current_weather } = await weatherResponse.json();
+
     const { temperature, weathercode } = current_weather;
 
     const advice = getBikingAdvice(weathercode, temperature);
@@ -48,6 +21,7 @@ async function fetchWeather() {
     console.error("Error fetching weather data:", error);
   }
 }
+
 
 function getBikingAdvice(code, temp) {
   let clothing = "";
